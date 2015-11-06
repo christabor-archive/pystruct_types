@@ -40,12 +40,12 @@ assert isssubclass(p, c)  # True
 Using the magic of Python's overloading magic methods, a bit of abstract base classes, and the inspect module, I've devised a way to analyze the contents of any class and then compare it's properties and methods to another class, to determine if the structure is in fact identical.
 
 ## How to use
-1. Import the module.
-2. Register your class to it, like you would any Abstract Base Class. [Take a look at ABC's in Python](https://docs.python.org/2/library/abc.html) for some background.
+* Import the module.
+* Register your class to it, like you would any Abstract Base Class. [Take a look at ABC's in Python](https://docs.python.org/2/library/abc.html) for some background.
 
 ```python
 struct.StructuralType.register(YourClass)
 your_class_instance = YourClass()
 ```
 
-3. Use **issubclass** operator to check if things are structurally equivalent!
+* Use **issubclass** operator to check if things are structurally equivalent!
